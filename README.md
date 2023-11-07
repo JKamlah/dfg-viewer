@@ -1,5 +1,7 @@
 # DFG Viewer
 
+### DISCLAIMER: This is a BERD@NFDI style modification of the DFG Viewer!
+
 The DFG Viewer is a free browser web service for displaying digitized books from remote library repositories in a rich and dynamic environment. It has an [OAI-PMH interface](http://www.openarchives.org/OAI/openarchivesprotocol.html) for exchanging meta- and structural data in the [METS](http://www.loc.gov/standards/mets/) and [IIIF](https://iiif.io/technical-details/) formats.
 
 As a result, users are provided with a uniform interface for viewing and interacting with digitized media. They can browse documents, view and download the individual digital representations (images and text) in various resolutions and use further enhanced options if the library provides additional data.
