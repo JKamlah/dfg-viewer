@@ -1,5 +1,5 @@
 {
-  "name": "ub-mannheim/dfgviewer",
+  "name": "jkamlah/dfgviewer",
   "type": "typo3-cms-extension",
   "description": "Remote resources navigator for digital libraries. Reads METS/MODS and METS/TEI via OAI-PMH..",
   "homepage": "https://github.com/UB-Mannheim/dfg-viewer",
@@ -37,6 +37,12 @@
     {
       "name": "Christos Sidiropoulos",
       "email": "christos.sidiropoulos@uni-mannheim.de",
+      "homepage": "https://www.bib.uni-mannheim.de",
+      "role": "Developer"
+    },
+    {
+      "name": "Jan Kamlah",
+      "email": "jan.kamlah@uni-mannheim.de",
       "homepage": "https://www.bib.uni-mannheim.de",
       "role": "Developer"
     }
