@@ -5,9 +5,6 @@
  * Basic definition of body, cotainers and other
  * structural elements
  *
- * Author: Thomas Jung <thomas@tjwd.de>
- * License: All rights reserved
- *
  */
 
 /* ==============[ first things first. simple font import. ]=============================== */
@@ -76,7 +73,7 @@ html, body {
 }
 body {
     text-align:center;
-    background: rgb(30,80,15);
+    /*background: rgb(30,80,15);*/
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     &:before {
         position: fixed;
@@ -84,7 +81,7 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background: url(../Images/fibonacciBg.svg) no-repeat right bottom;
+        background: url(../Images/BERD-NFDI_green_waves_white_bg.svg) no-repeat right bottom;
         background-size: cover;
         content: " ";
         opacity: 0.3;
@@ -171,7 +168,7 @@ a {
             left: 0;
             right: 0;
             text-align: left;
-            z-index: 1000;
+            z-index: auto;
             background: #fff;
             display: flex;
             align-items: center;
@@ -274,7 +271,7 @@ a {
                 }
             }
             .fullscreen & {
-                .transform(translateY(-100%));
+                .transform(translateY(-10%));
             }
         }
         &.missing-provider-image {
@@ -343,5 +340,3 @@ a {
         left: 25%;
     }
 }
-
-// EOF
