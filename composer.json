@@ -1,5 +1,5 @@
 {
-  "name": "slub/dfgviewer",
+  "name": "jkamlah/berdviewer",
   "type": "typo3-cms-extension",
   "description": "Remote resources navigator for digital libraries. Reads METS/MODS and METS/TEI via OAI-PMH.",
   "homepage": "https://github.com/slub/dfg-viewer",
