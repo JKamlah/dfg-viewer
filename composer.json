@@ -1,8 +1,8 @@
 {
-  "name": "jkamlah/dfgviewer",
+  "name": "jkamlah/berdviewer",
   "type": "typo3-cms-extension",
-  "description": "Remote resources navigator for digital libraries. Reads METS/MODS and METS/TEI via OAI-PMH..",
-  "homepage": "https://github.com/UB-Mannheim/dfg-viewer",
+  "description": "Remote resources navigator for digital libraries. Reads METS/MODS and METS/TEI via OAI-PMH.",
+  "homepage": "https://github.com/slub/dfg-viewer",
   "keywords": [
     "TYPO3",
     "extension",
@@ -33,25 +33,13 @@
       "name": "Erik Konrad",
       "email": "typo3@slub-dresden.de",
       "role": "Developer"
-    },
-    {
-      "name": "Christos Sidiropoulos",
-      "email": "christos.sidiropoulos@uni-mannheim.de",
-      "homepage": "https://www.bib.uni-mannheim.de",
-      "role": "Developer"
-    },
-    {
-      "name": "Jan Kamlah",
-      "email": "jan.kamlah@uni-mannheim.de",
-      "homepage": "https://www.bib.uni-mannheim.de",
-      "role": "Developer"
     }
   ],
   "license": "GPL-3.0-or-later",
   "require": {
     "typo3/cms-core": "~9.5.31|^10.4",
-    "ub-mannheim/presentation": "dev-4.x-ocr",
-    "ub-mannheim/ubma-digitalcollections": "dev-slubmaster"
+    "kitodo/presentation": "^4.0|dev-master",
+    "slub/slub-digitalcollections": "^3.0|dev-master"
   },
   "autoload": {
     "psr-4": {
@@ -67,5 +55,11 @@
     "docs:setup": "./Build/Documentation/sphinx.sh install",
     "docs:serve": "./Build/Documentation/sphinx.sh serve",
     "docs:t3": "docker-compose -f ./Build/Documentation/docker-compose.t3docs.yml run --rm t3docs"
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
   }
 }
