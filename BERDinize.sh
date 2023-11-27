@@ -10,10 +10,12 @@ Private/Less/website/home.less
 Private/Less/website/content.less
 Private/Less/website/structure.less
 Private/Less/modules/sidebar.less
+Private/Less/modules/gridview.less
 Private/Partials/ControlBar.html
 Public/Images/BERD-NFDI_logo_white.svg
 Public/Images/BERD-NFDI_logo_green_black.svg
-Public/Images/BERD-NFDI_green_waves_white_bg.svg"
+Public/Images/BERD-NFDI_green_waves_white_bg.svg
+Public/Images/BERD-NFDI_green_waves_clear_bg.svg"
 
 for file in $files; do
     docker cp "./Resources/$file" "kitodo-presentation-main:/var/www/typo3/public/typo3conf/ext/dfgviewer/Resources/$file"
