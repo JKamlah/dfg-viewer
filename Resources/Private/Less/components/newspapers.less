@@ -27,7 +27,7 @@
             margin: 20px;
             a {
                 display: block;
-                background: lighten(@light-blue, 20%);
+                background: lighten(@berd-green, 20%);
                 padding: 10px;
                 border-radius: 40px;
             }
@@ -61,7 +61,7 @@
         display: none;
     }
     .year-anchor {
-        border-bottom: 1px solid @light-blue;
+        border-bottom: 1px solid @berd-green;
         line-height: 1.4;
         font-size: 12px;
     }
@@ -69,7 +69,7 @@
         font-weight: bold;
         line-height: 1.4;
         a {
-            color: @base-blue;
+            color: @berd-green-dark;
         }
     }
     .calendar-view {
@@ -79,12 +79,12 @@
             width: 100%;
             margin: 50px 0;
             text-align: center;
-            border-bottom: 1px solid fade(@light-blue,30%);
+            border-bottom: 1px solid fade(@berd-green,30%);
             caption {
-                color: @base-blue;
+                color: @berd-green-dark;
                 font-weight: bold;
                 text-align: left;
-                border-bottom: 1px solid fade(@light-blue,30%);
+                border-bottom: 1px solid fade(@berd-green,30%);
                 font-size: 12px;
                 text-transform: uppercase;
             }
@@ -94,13 +94,13 @@
                     padding: 6px;
                 }
                 th {
-                    color: @light-blue;
+                    color: @berd-green;
                 }
                 td {
-                    color: @light-blue;
+                    color: @berd-green;
                     .contains-issues {
                         position: relative;
-                        color: @base-blue;
+                        color: @berd-green-dark;
                         font-weight: bold;
                         display: block;
                         .transition();
@@ -113,7 +113,7 @@
                             height: 0;
                             border: 5px solid transparent;
                             border-top-width: 0;
-                            border-bottom-color: fade(@base-blue,90%);
+                            border-bottom-color: fade(@berd-green-dark,90%);
                             content: " ";
                             opacity: 0;
                             .transform(translateY(15px));
@@ -129,7 +129,7 @@
                         right: 0;
                         padding: 10px;
                         margin-top: 10px;
-                        background: fade(@base-blue,90%);
+                        background: fade(@berd-green-dark,90%);
                         opacity: 0;
                         .transform(scaleY(0));
                         .transition();
@@ -171,7 +171,7 @@
             right: 35px;
             a {
                 position: relative;
-                background: @light-blue;
+                background: @berd-green;
                 color: #fff;
                 font-size: 12px;
                 padding: 4px 10px;
@@ -182,7 +182,7 @@
                     cursor: pointer;
                 }
                 &.active {
-                    background: @base-blue;
+                    background: @berd-green-dark;
                     &:before {
                         position: absolute;
                         bottom: -5px;
@@ -192,7 +192,7 @@
                         height: 0;
                         border: 5px solid transparent;
                         border-bottom-width: 0;
-                        border-top-color: @base-blue;
+                        border-top-color: @berd-green-dark;
                         content: " ";
                     }
                 }
@@ -262,7 +262,7 @@
                 li {
                     padding: 10px;
                     margin: 10px 0;
-                    background: fade(@light-blue, 15%);
+                    background: fade(@berd-green, 15%);
                     border-radius: 40px;
                     text-align: right;
                     .transition();
@@ -270,11 +270,11 @@
                         position: absolute;
                         left: 10px;
                         font-size: 12px;
-                        color: @base-blue;
+                        color: @berd-green-dark;
                         line-height: 25px;
                     }
                     a {
-                        background: fade(@light-blue, 30%);
+                        background: fade(@berd-green, 30%);
                         display: inline-block;
                         border-radius: 20px;
                         padding: 5px 10px;
@@ -285,7 +285,7 @@
                         }
                         .no-touchevents & {
                             &:hover {
-                                background: fade(@light-blue, 50%);
+                                background: fade(@berd-green, 50%);
                             }
                         }
                     }

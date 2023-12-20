@@ -366,7 +366,7 @@ relevance:0,keywords:"def",end:"$|;",contains:[n.inherit(n.TITLE_MODE,{begin:a
 }),l].concat(b)},{begin:n.IDENT_RE+"::"},{className:"symbol",
 begin:n.UNDERSCORE_IDENT_RE+"(!|\\?)?:",relevance:0},{className:"symbol",
 begin:":(?!\\s)",contains:[t,{begin:a}],relevance:0},d,{className:"variable",
-begin:"(\\$\\W)|((\\$|@@?)(\\w+))(?=[^@$?])(?![A-Za-z])(?![@$?'])"},{
+begin:"(\\$\\W)|((\\$|@?)(\\w+))(?=[^@$?])(?![A-Za-z])(?![@$?'])"},{
 className:"params",begin:/\|/,end:/\|/,relevance:0,keywords:i},{
 begin:"("+n.RE_STARTERS_RE+"|unless)\\s*",keywords:"unless",contains:[{
 className:"regexp",contains:[n.BACKSLASH_ESCAPE,c],illegal:/\n/,variants:[{
@@ -545,7 +545,7 @@ begin:"\\(",end:"\\)",contains:g,keywords:u,relevance:0}
 ;g.push(a.C_LINE_COMMENT_MODE,a.C_BLOCK_COMMENT_MODE,b("'"),b('"'),a.CSS_NUMBER_MODE,{
 begin:"(url|data-uri)\\(",starts:{className:"string",end:"[\\)\\n]",
 excludeEnd:!0}
-},s.HEXCOLOR,p,m("variable","@@?[\\w-]+",10),m("variable","@\\{[\\w-]+\\}"),m("built_in","~?`[^`]*?`"),{
+},s.HEXCOLOR,p,m("variable","@?[\\w-]+",10),m("variable","@\\{[\\w-]+\\}"),m("built_in","~?`[^`]*?`"),{
 className:"attribute",begin:"[\\w-]+\\s*:",end:":",returnBegin:!0,excludeEnd:!0
 },s.IMPORTANT);const f=g.concat({begin:/\{/,end:/\}/,contains:c}),h={
 beginKeywords:"when",endsWithParent:!0,contains:[{beginKeywords:"and not"
@@ -632,7 +632,7 @@ end:/[{;]/,excludeEnd:!0,contains:[i.inherit(i.TITLE_MODE,{begin:c}),"self",p]
 contains:[i.inherit(i.TITLE_MODE,{begin:c}),{begin:/\(\)/},p]},{begin:/\$[(.]/}]
 }}})());hljs.registerLanguage("diff",(()=>{"use strict";return e=>({name:"Diff",
 aliases:["patch"],contains:[{className:"meta",relevance:10,variants:[{
-begin:/^@@ +-\d+,\d+ +\+\d+,\d+ +@@/},{begin:/^\*\*\* +\d+,\d+ +\*\*\*\*$/},{
+begin:/^@ +-\d+,\d+ +\+\d+,\d+ +@/},{begin:/^\*\*\* +\d+,\d+ +\*\*\*\*$/},{
 begin:/^--- +\d+,\d+ +----$/}]},{className:"comment",variants:[{begin:/Index: /,
 end:/$/},{begin:/^index/,end:/$/},{begin:/={3,}/,end:/$/},{begin:/^-{3}/,end:/$/
 },{begin:/^\*{3} /,end:/$/},{begin:/^\+{3}/,end:/$/},{begin:/^\*{15}$/},{
