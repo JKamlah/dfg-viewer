@@ -5,7 +5,7 @@
 <f:section name="ControlBar">
   <div class="control-bar">
       <div class="header-bar">
-        <h1><f:link.page pageUid="{rootPageId}" title="DFG-Viewer" class="dfgviewer-logo">DFG-Viewer-EDIT</f:link.page></h1>
+        <h1><f:link.page pageUid="{rootPageId}" title="BERD-Viewer" class="berdviewer-logo">BERD-Viewer</f:link.page></h1>
         <nav>
           <f:cObject typoscriptObjectPath="lib.menu.language" />
           <f:cObject typoscriptObjectPath="lib.menu.viewernav" />
@@ -26,10 +26,17 @@
         <div class="offcanvas-toggle" title="<f:translate key='metadata' extensionName='dfgviewer' />"></div>
       </div>
 
-      <div class="toc-wrapper">
-          <f:cObject typoscriptObjectPath="plugin.tx_dlf_tableofcontents" />
-          <div class="offcanvas-toggle" title="<f:translate key='toc' extensionName='dfgviewer' />"></div>
-      </div>
+      <f:if condition="{isObject3D} == 'object'">
+        <f:then>
+          <!-- it's a 3D object - no need for ToC here! -->
+        </f:then>
+        <f:else>
+          <div class="toc-wrapper">
+              <f:cObject typoscriptObjectPath="plugin.tx_dlf_tableofcontents" />
+              <div class="offcanvas-toggle" title="<f:translate key='toc' extensionName='dfgviewer' />"></div>
+          </div>
+        </f:else>
+      </f:if>
   </div>
 </f:section>
 

@@ -1,5 +1,5 @@
 {
-    "name": "ub-mannheim/dfgviewer",
+    "name": "jkamlah/berdviewer",
     "type": "typo3-cms-extension",
     "description": "Remote resources navigator for digital libraries. Reads METS/MODS and METS/TEI via OAI-PMH..",
     "homepage": "https://github.com/UB-Mannheim/dfg-viewer",
@@ -38,7 +38,12 @@
             "name": "Beatrycze Volk",
             "email": "beatrycze.volk@slub-dresden.de",
             "role": "Developer"
-        }
+        },
+        {
+            "name": "Jan Kamlah",
+            "email": "jan.kamlah@uni-mannheim.de",
+            "role": "Developer"
+        },
     ],
     "license": "GPL-3.0-or-later",
     "require": {
