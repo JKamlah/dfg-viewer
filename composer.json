@@ -43,7 +43,7 @@
             "name": "Jan Kamlah",
             "email": "jan.kamlah@uni-mannheim.de",
             "role": "Developer"
-        },
+        }
     ],
     "license": "GPL-3.0-or-later",
     "require": {
