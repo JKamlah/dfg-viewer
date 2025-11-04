@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set alias for podman as docker please comment if you use docker
-alias docker='podman'
+#alias docker='podman'
 
 files="Private/Less/structure.less
 Private/Less/variables.less
